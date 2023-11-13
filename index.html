@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const div = document.createElement("div");
+
+const text = document.createElement("p");
+
+const ul = document.createElement("ul");
+const li1 = document.createElement("a");
+li1.href = "https://intocode.ru/";
+li1.textContent = "intocode";
+li1.style.color = "blue"
+const li2 = document.createElement("a");
+li2.href = "https://www.google.ru/?hl=ru";
+li2.textContent = "google";
+const li3 = document.createElement("a");
+li3.href = "https://ru.wikipedia.org/wiki/Instagram";
+li3.textContent = "instagram";
+
+ul.append(li1, li2, li3);
+
+ul.style.display = "flex";
+ul.style.justifyContent = "space-Around";
+
+text.textContent =
+  "Lorem ipsum dolor sit amet, consectetur lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+div.append(text);
+div.style.border = "2px solid brown";
+div.style.padding = "5px"
+div.style.width = "400px";
+div.style.borderRadius = "10px";
+
+
+const div2 = document.createElement("div");
+div2.append(div, ul);
+
+document.body.append(div2);
+document.body.style.display = "flex";
+document.body.style.justifyContent = "center";
+document.body.style.boxSizing = "border-box";
+
+    </script>
+  </body>
+</html>
